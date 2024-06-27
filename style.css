@@ -4,3 +4,71 @@
     box-sizing: border-box;
     font-family: "Roboto Mono", monospace;
 }
+
+header{
+    text-align: center;
+    color: white;
+    background-color: #000;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+#box1, #box2, #box3, #box4{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: all 120ms linear;
+}
+
+#box1{
+    background: linear-gradient(45deg,rgb(254,218,117), rgb(250,126,30),rgb(214,41,118),rgb(150,47,191),rgb(79,91,213));
+    font-size: large;
+}
+
+#box2{
+    font-size: large;
+    background-color: rgb(24,119,242);
+    
+}
+
+#box3{
+    background-color: rgb(255,0,0);
+}
+
+#box4{
+    color: #ffffff;
+    background-color: rgb(29, 161, 242);
+}
+
+#box1:hover, #box2:hover, #box3:hover, #box4:hover{
+    scale: 1.1;
+    cursor: pointer;
+    background-color: black;
+}
+
+#box1:hover{
+    background-image: url(logo-black.png);
+}
+
+.social-links{
+    visibility: hidden;
+    list-style-type: none;
+}
+.socials:hover .social-links{
+    visibility:visible;
+    overflow: visible;
+}
