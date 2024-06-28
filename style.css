@@ -4,23 +4,35 @@
     box-sizing: border-box;
     font-family: "Roboto Mono", monospace;
 }
-
+body{
+    background-color: #000;
+}
 header{
+    position:relative;
+    font-size: x-large;
     text-align: center;
     color: white;
     background-color: #000;
+    padding: 20px;
+    animation: heading 1.3s forwards;
 }
-
+@keyframes heading{
+    from {
+        top: -100px;
+    }
+    to{
+        top: 0px;
+    }
+}
 .nav-bar{
+    height: 7vh;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: space-evenly;
     text-decoration: none;
+    border: 1px solid black;
+    background-color: #ffffff;
 }
-a{
-    text-decoration: none;
-}
-
 
 #box1, #box2, #box3, #box4{
     height: 34px;
@@ -32,6 +44,7 @@ a{
     align-items: center;
     color: #fff;
     transition: all 120ms linear;
+
 }
 
 #box1{
@@ -58,6 +71,7 @@ a{
     scale: 1.1;
     cursor: pointer;
     background-color: black;
+    border: 1px solid white;
 }
 
 #box1:hover{
@@ -65,10 +79,162 @@ a{
 }
 
 .social-links{
+    top: 20%;
+    position: absolute;
     visibility: hidden;
     list-style-type: none;
+    overflow: visible;
 }
 .socials:hover .social-links{
     visibility:visible;
     overflow: visible;
+}
+
+.socials:hover{
+    z-index: 100;
+}
+
+
+a{
+    height: 100%;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0D0D0D;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+a:hover{
+    background-color: black;
+    color: #ffffff;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#title, #author, #textarea, #selections{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.button{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#submit{
+    font-size: large;
+    width: 20%;
+    background-color: #FFFFFF;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+#submit:hover{
+    color: white;
+    background-color: black;
+    scale: 1.1;
+    border: 1px solid white;
+}
+.cars-section{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#car-card{
+    position: relative;
+    height: 300px;
+    width: 250px;
+    border-radius: 3%;
+    margin: 30px;
+    padding: 20px;
+    margin-bottom: 0;
+    transition: all 0.2s ease-in-out;
+    color: rgba(238, 238, 238, 0.683);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#car-card:hover{
+    cursor: pointer;
+    scale: 102%;
+    border: 0.2px solid gainsboro;
+    opacity: 0.8;
+    color: white;
+}
+
+.car1{
+    background-image: url(https://visualeducation.com/wp-content/uploads/2020/08/mercedes-car-front.jpg);
+}
+.car2{
+    background-image: url(https://images.unsplash.com/photo-1698612769032-498c185cb333?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.car3{
+    background-image: url(https://pbs.twimg.com/media/GM4q8HbW4AEh0Wu?format=jpg&name=medium);
+}
+.car4{
+    background-image: url(https://images.unsplash.com/flagged/photo-1579782647395-2e6fb36a64f2?q=80&w=1706&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    z-index: 99;
+}
+.car5{
+    background-image: url(https://www.shutterstock.com/image-illustration/neon-bugatti-veyron-super-car-600nw-2347102677.jpg);
+}
+.car6{
+    background-image: url(https://images.unsplash.com/photo-1655673234811-dbcc34857129?q=80&w=1756&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.car7{
+    background-image: url(https://i0.wp.com/storage.googleapis.com/pod_public/1300/121074.jpg?ssl=1);
+}
+.car8{
+    background-image: url();
+}
+.car9{
+    background-image: url();
+}
+.car10{
+    background-image: url();
+}
+.car11{
+    background-image: url();
+}
+.car12{
+    background-image: url();
+}
+
+.text{
+    position: absolute;
+    background-color: rgba(142, 139, 139, 0.7);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 4px;
+    border-radius: 0 0 10px 10px ;
+}
+
+.text1{
+    position: absolute;
+    background-color: rgba(142, 139, 139, 0.7);
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    padding: 4px;
+    border-radius: 0 0 10px 10px ;
+    text-align: center;
 }
