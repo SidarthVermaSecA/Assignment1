@@ -239,3 +239,96 @@ form{
     border-radius: 0 0 10px 10px ;
     text-align: center;
 }
+
+.section1, .section2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 95vh;
+    width: 95vw;
+}
+
+.heading{
+    position: relative;
+    height: 90%;
+    width: 50%;
+    animation: animate-leftSide 2s ease-in-out;
+}
+.heading h2, .heading2 h2{
+    margin: 50px;
+    color: white;
+    font-size: 120px;
+}
+
+.picture1{
+    position: relative;
+    height: 90%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1619551734325-81aaf323686c?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    border-radius: 20px;
+    animation: animate-rightSide 2s ease-in-out;
+}
+
+.picture2{
+    position: relative;
+    height: 90%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1541348263662-e068662d82af?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    border-radius: 20px;
+    animation: animate-leftSide 2s ease-in-out;
+}
+
+
+.heading2{
+    position: relative;
+    height: 90%;
+    width: 50%;
+    animation: animate-rightSide 2s ease-in-out;
+}
+
+
+@media (max-width: 768px){
+    section{
+        display: block;
+        height: 100%;
+    }
+    .heading, .heading2, .picture1, .picture2{
+        font-size: 60px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    height: 4%;
+    color: black;
+}
+
+span{
+    color: black;
+    background-color:white;
+    border-radius: 10px;
+}
+
+@keyframes animate-leftSide{
+    from{
+        left: -400px;
+    }
+    to{
+        left: 0px;
+    }
+}
+
+@keyframes animate-rightSide{
+    from{
+        right: -400px;
+    }
+    to{
+        right: 0px;
+    }
+}
