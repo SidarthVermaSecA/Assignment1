@@ -1,0 +1,21 @@
+//Report
+
+
+So this assignment was about a webpage(s) related to your Hobby, and it should include multiple webpage with a seamless way to jump accross them, which was done possible with the help of a navigation bar. 
+
+
+I made in total 3 different pages, each of them linked to each other and then one extra anchor tag in the navbar which can include the link to external social media apps. 
+
+
+Lets start from the Home page (index.html);
+
+So I went with the generic black and white theme. Added animations to header and the content of the page. I divided the part into 4 sections, 1st is header, then navigation bar then 2 sections represting two different car brands and eventually ending with a footer. 
+
+
+Now in All Media page (media.html):
+
+I made several cards which include the picture of the car (mostly front pose) and the model and manufacturer of the car. I added a hover animation to make it interactive and stylish. 
+
+Enquiry Form (form.html):
+
+A simple form layout, with 3 text inputs and one list-style option input and a submit button. 
